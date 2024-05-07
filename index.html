@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="visor">
+                <p class="display" id="display">0</p>
+            </div>
+            <div class="keys">
+                <div class="columns">
+                    <div class="first-column">
+                        <input type="button" value="/" class="key-normal top-left" onclick="setOperation('/')">
+                        <input type="button" value="%" class="key-normal" onclick="setOperation('%')">
+                        <input type="button" value="^" class="key-normal" onclick="setOperation('^')">
+                        <input type="button" value="C" class="key-normal bottom-left" onclick="clearDisplay()">
+                    </div>
+                    <div class="second-column">
+                        <input type="button" value="7" class="key-normal" onclick="liveDisplay(7)">
+                        <input type="button" value="4" class="key-normal" onclick="liveDisplay(4)">
+                        <input type="button" value="1" class="key-normal" onclick="liveDisplay(1)">
+                        <input type="button" value="0" class="key-normal" onclick="liveDisplay(0)">
+                    </div>
+                    <div class="third-column">
+                        <input type="button" value="8" class="key-normal" onclick="liveDisplay(8)">
+                        <input type="button" value="5" class="key-normal" onclick="liveDisplay(5)">
+                        <input type="button" value="2" class="key-normal" onclick="liveDisplay(2)">
+                        <input type="button" value="." class="key-normal" onclick="liveDisplay(10)">
+                    </div>
+                    <div class="fourth-column">
+                        <input type="button" value="9" class="key-normal" onclick="liveDisplay(9)">
+                        <input type="button" value="6" class="key-normal" onclick="liveDisplay(6)">
+                        <input type="button" value="3" class="key-normal" onclick="liveDisplay(3)">
+                        <input type="button" value="=" class="key-normal" onclick="calculate()">
+                    </div>
+                    <div class="fifth-column">
+                        <input type="button" value="X" class="key-normal top-right" onclick="setOperation('X')">
+                        <input type="button" value="-" class="key-normal" onclick="setOperation('-')">
+                        <input type="button" value="+" class="key-extended bottom-right" onclick="setOperation('+')">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
