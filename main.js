@@ -49,7 +49,7 @@ function calculate() {
             result = previousValue / currentValue;
             break;
         case '%':
-            result = previousValue % currentValue;
+            result = (previousValue * (1/100)) * currentValue;
             break;
         case '^':
             result = Math.pow(previousValue, currentValue);
